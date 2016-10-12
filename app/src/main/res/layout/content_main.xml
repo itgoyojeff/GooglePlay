@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <org.itheima.tabindicator.library.TabIndicator
+        android:id="@+id/main_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tiRectColor="#ff0000"
+        app:tiRectRadius="15dp"
+        app:tiRectStrokeColor="#0000ff"
+        app:tiRectStrokeWidth="2dp"
+        app:tiRectStyle="fill"
+        app:tiTabMode="rect"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>
